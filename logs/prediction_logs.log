@@ -1,0 +1,54 @@
+2025-03-06 12:32:28,465 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-06 12:32:28,465 - Probing node bootstrap-0 broker version
+2025-03-06 12:32:28,465 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-06 12:32:28,571 - Broker version identified as 2.6.0
+2025-03-06 12:32:28,571 - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2025-03-06 12:32:28,572 - group_id is None: disabling auto-commit.
+2025-03-06 12:32:28,572 - Updating subscribed topics to: ('input-data',)
+2025-03-06 12:32:28,573 - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-06 12:32:28,573 - Probing node bootstrap-0 broker version
+2025-03-06 12:32:28,573 - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-06 12:32:28,677 - Broker version identified as 2.6.0
+2025-03-06 12:32:28,677 - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2025-03-06 12:32:28,680 - Updated partition assignment: [TopicPartition(topic='input-data', partition=0)]
+2025-03-06 12:32:28,682 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-06 12:32:28,682 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-06 12:32:28,682 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-06 12:32:38,737 - Processed Message ID: 0102b9b8-4538-4a31-84ee-9170a5a300ee, Latency: 0.1028 seconds, Total Messages: 1
+2025-03-06 12:32:38,738 - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-06 12:32:38,739 - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-06 12:32:38,739 - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-06 12:32:40,161 - Processed Message ID: e97694aa-4551-4bc3-ab52-27763aa80532, Latency: 0.0544 seconds, Total Messages: 2
+2025-03-06 12:32:41,656 - Processed Message ID: 24c5b7eb-cbbe-4134-a178-ce1d451a01b1, Latency: 0.0486 seconds, Total Messages: 3
+2025-03-06 12:32:43,157 - Processed Message ID: 445cdba6-87db-40f2-8907-3240264145ff, Latency: 0.0489 seconds, Total Messages: 4
+2025-03-06 12:32:44,656 - Processed Message ID: eb78db91-f4e8-4eff-98ec-c958e709a14c, Latency: 0.0479 seconds, Total Messages: 5
+2025-03-06 12:32:46,158 - Processed Message ID: 5cf03ae1-3bec-42f4-828e-2fbdaaebc7cd, Latency: 0.0482 seconds, Total Messages: 6
+2025-03-06 12:32:47,659 - Processed Message ID: a4da80b7-eac3-4674-ba0d-f3b2431279bf, Latency: 0.0486 seconds, Total Messages: 7
+2025-03-06 12:32:49,162 - Processed Message ID: 8093ab6b-56f9-45ea-ad39-f99d550cafd5, Latency: 0.0505 seconds, Total Messages: 8
+2025-03-06 12:32:50,661 - Processed Message ID: 465c6f24-3c92-495f-a6ba-57c1a57e2581, Latency: 0.0487 seconds, Total Messages: 9
+2025-03-06 12:32:52,162 - Processed Message ID: f6b7b83c-009b-41ad-8130-a8ab2abfce67, Latency: 0.0490 seconds, Total Messages: 10
+2025-03-06 12:32:52,165 - Metrics after 10 messages - MSE: 7.9271, MAE: 2.2519, R²: 0.6566
+2025-03-06 12:33:38,796 - Closing the Kafka producer with 0 secs timeout.
+2025-03-06 12:33:38,797 - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+2025-03-06 12:33:38,797 - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-06 12:33:52,024 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-06 12:33:52,024 - Probing node bootstrap-0 broker version
+2025-03-06 12:33:52,025 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-06 12:33:52,128 - Broker version identified as 2.6.0
+2025-03-06 12:33:52,128 - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2025-03-06 12:33:52,128 - group_id is None: disabling auto-commit.
+2025-03-06 12:33:52,129 - Updating subscribed topics to: ('input-data',)
+2025-03-06 12:33:52,129 - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-06 12:33:52,129 - Probing node bootstrap-0 broker version
+2025-03-06 12:33:52,130 - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-06 12:33:52,233 - Broker version identified as 2.6.0
+2025-03-06 12:33:52,233 - Set configuration api_version=(2, 6, 0) to skip auto check_version requests on startup
+2025-03-06 12:33:52,236 - Updated partition assignment: [TopicPartition(topic='input-data', partition=0)]
+2025-03-06 12:33:52,237 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-06 12:33:52,237 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-06 12:33:52,237 - <BrokerConnection client_id=kafka-python-2.0.5, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-06 12:33:53,479 - Processed Message ID: 7d6efe09-3b38-43f4-9baa-445fb3a3780e, Latency: 0.0946 seconds, Total Messages: 1
+2025-03-06 12:33:53,481 - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-03-06 12:33:53,481 - <BrokerConnection client_id=kafka-python-producer-1, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-03-06 12:33:53,481 - <BrokerConnection client_id=kafka-python-producer-1, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-03-06 12:33:54,934 - Processed Message ID: fd668e95-15be-4755-8582-6460cdf7762f, Latency: 0.0482 seconds, Total Messages: 2
