@@ -8,7 +8,7 @@ import logging
 from datetime import datetime
 from kafka import KafkaConsumer, KafkaProducer
 from tensorflow import keras
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+from sklearn.metrics import mean_squared_error, mean_absolute_error, mean_absolute_percentage_error
 
 # Import constants
 from constants import *
@@ -22,6 +22,7 @@ logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format='%(asctime)s -
 model = keras.models.load_model(MODEL_PATH)
 x_scaler = joblib.load(SCALER_PATH)
 y_scaler = joblib.load(Y_SCALER_PATH)  # Load Y scaler
+print(f"\n\nTrained Model loaded from {MODEL_PATH}, \nScalers loaded from {SCALER_PATH}, {Y_SCALER_PATH}")
 
 # Ensure output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -43,7 +44,7 @@ producer = KafkaProducer(
 with open(CSV_FILE, "w") as f:
     f.write("id,timestamp,open,high,low,volume,close,predicted_close\n")
 
-print("Consumer is listening...")
+print(f"\nConsumer is listening to topic {INPUT_TOPIC}...")
 
 # Store actual and predicted values for evaluation
 actual_values = []
@@ -54,8 +55,8 @@ def log_performance_metrics():
     if len(actual_values) >= 10:
         mse = mean_squared_error(actual_values, predicted_values)
         mae = mean_absolute_error(actual_values, predicted_values)
-        r2 = r2_score(actual_values, predicted_values)
-        logging.info(f"Metrics after {len(actual_values)} messages - MSE: {mse:.4f}, MAE: {mae:.4f}, R²: {r2:.4f}")
+        mape = mean_absolute_percentage_error(actual_values, predicted_values)
+        logging.info(f"Metrics after {len(actual_values)} messages - MSE: {mse:.4f}, MAE: {mae:.4f}, MAPE: {mape:.4f}")
 
 for message in consumer:
     start_time = time.time()  # Start time for latency measurement

@@ -15,7 +15,7 @@ producer = KafkaProducer(
 # Load Test Data for Predictions
 df = pd.read_csv('data/test-data/test_microsoft_stock.csv')
 
-def send_stock_data(n=10):
+def send_stock_data(n=20):
     for _, row in df.head(n).iterrows():
         message = {
             "id": str(uuid.uuid4()),
